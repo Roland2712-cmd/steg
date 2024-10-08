@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #00796b;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+body,html{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url('balcsi.jfif');
+ background-size:cover;
+}
+strong{
+    color:whitesmoke;
+}
+p{
+    text-transform: uppercase;
+Color:whitesmoke;
+    font-size:15px;
+    font-weight: bold;
+    background-color:lightslategrey;
+}
+h1 {
+    color: #004d40;
+    font-family:algerian;
+}
+.also{
+    color:darkgoldenrod;
+    font-family:algerian;
+    font-weight:bolder;
+}
+.felso{
+    font-size:24px;
+    font-family:algerian;
+    color:#00796b;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+.admin-panel {
+    position: fixed; /* Fix pozicionálás */
+    bottom: 20px;    /* Alsó távolság */
+    right: 20px;     /* Jobb távolság */
+    background-color: rgba(255, 255, 255, 0.9); /* Áttetsző háttér */
+    border: 1px solid #bdc3c7; /* Határvonal */
+    border-radius: 8px; /* Lekerekített sarkok */
+    padding: 15px; /* Belső távolság */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Árnyék */
+    z-index: 1000; /* Előtérbe helyezés */
+    width: 250px; /* Fix szélesség */
+}
+
+.admin-panel h2 {
+    color: #2c3e50;
+    font-size: 18px; /* Cím mérete */
+    margin: 0 0 10px 0; /* Margó a cím alatt */
+}
+
+.admin-panel input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%; /* Csökkentett szélesség */
+    max-width: 200px; /* Maximális szélesség */
+    border: 1px solid #bdc3c7; /* Határvonal a mező körül */
+    border-radius: 4px; /* Lekerekített sarkok a mezőn */
+    display: block; /* Blokk elem, hogy középre igazítható legyen */
+    margin-left: auto; /* Középre igazítás */
+    margin-right: auto; /* Középre igazítás */
+}
+
+.admin-panel button {
+    margin: 5px 0;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Teljes szélesség */
+    border-radius: 4px; /* Lekerekített sarkok a gombon */
+}
+
+.admin-panel button:hover {
+    background-color: #2980b9;
+}
+
+.admin-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-panel li {
+    padding: 5px;
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+#calendarContainer {
+    width: 100%;
+    max-width: 600px; /* Maximális szélesség */
+    margin: 0 auto; /* Középre igazítás */
+    text-align: center;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day {
+    width: 60px; /* Növelt szélesség */
+    height: 60px; /* Növelt magasság */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-size: 18px; /* Nagyobb betűméret */
+    border-radius: 5px; /* Lekerekített sarkok */
+}
+
+.fogalt {
+    background-color: red; /* Foglalt nap piros */
+    color: white;
+}
+
+.szabad {
+    background-color: green; /* Szabad nap zöld */
+    color: white;
+}
+#calendarTitle {
+    font-weight: bold; /* Félkövér */
+    color: white; /* Fehér szín */
+    background-color: #4CAF50; /* Algériai zöld */
+    padding: 10px; /* Párnázás */
+    border-radius: 5px; /* Lekerekített sarkok */
+    margin-bottom: 10px; /* Térköz a naptár felett */
+}

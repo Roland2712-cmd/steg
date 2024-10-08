@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horgász Stég Foglalás</title>
+    <link rel="stylesheet" href="stég.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gyenesdiás <br>
+        horgász stég foglalás</h1>
+        
+        <div id="availability"></div>
+        <div id="booking-form" style="display:none;">
+            <h2>Foglalj Stéget</h2>
+            <form id="reservationForm">
+                <label for="name">Név:</label>
+                <input type="text" id="name" required>
+                <button type="submit">Foglalás</button>
+            </form>
+        </div>
+    </div>
+    <div class="admin-panel">
+        <h2></h2>
+        <input type="password" id="adminPassword" placeholder="Jelszó">
+        <button onclick="checkAdminPassword()">Belépés</button>
+        <ul id="adminReservationList" style="display:none;"></ul>
+        <button id="logoutButton" style="display:none;" onclick="logout()">Kilépés</button>
+    </div>
+    <div>
+       
+        <input type="date" id="reservationDate" placeholder="Dátum">
+        <input type="text" id="reservationName" placeholder="Név">
+        <button onclick="addReservation()">Foglalás</button>
+    </div>
+    
+    <ul id="adminReservationList"></ul>
+    <script src="stég.js"></script>
+        <h1 class="also">Ne habozz! Fogd a felszerelésed, és gyere el hozzánk a stégre!<br>Élvezd a természetet, a horgászatot, és tölts el egy felejthetetlen napot!</h1>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><h1><strong>Várunk szeretettel! 🐟🎣</strong></h1>
+    
+        <div id="calendarContainer">
+            <h2 id="calendarTitle"></h2>
+            <button id="prevMonth" onclick="changeMonth(-1)">Előző hónap</button>
+            <button id="nextMonth" onclick="changeMonth(1)">Következő hónap</button>
+            <div id="calendar"></div>
+        </div>    
+        
+</body>
+</html>
